@@ -1,29 +1,97 @@
 # ColoredEnderChests
-ColoredEnderChests is a [Slimefun4](https://github.com/TheBusyBiscuit/Slimefun4/) Addon.<br>
-You need to install Slimefun4 in order for this plugin to work.
 
-ColoredEnderChests is a Slimefun4 Addon that is heavily inspired by the famous mod [Ender Storage](https://www.curseforge.com/minecraft/mc-mods/ender-storage).
-It adds a total of 8192 new items to Slimefun4.
-You can create global Ender Chests out of any combination of three dyes. These Ender Chests will share the same inventory per-color.
-They even work with Cargo nodes and are shared across all Players.
+A Bukkit/Spigot/Paper plugin for [Slimefun](https://github.com/Slimefun/Slimefun4) that adds customizable, per-player, per-color Ender Chests with persistent storage and colorful, dynamic item lore.
 
-## Download ColoredEnderChests
-You can download ColoredEnderChests right here: [Development Builds](https://thebusybiscuit.github.io/builds/TheBusyBiscuit/ColoredEnderChests/master/)
+---
 
-<p align="center">
-  <a href="https://thebusybiscuit.github.io/builds/TheBusyBiscuit/ColoredEnderChests/master/">
-    <img src="https://thebusybiscuit.github.io/builds/TheBusyBiscuit/ColoredEnderChests/master/badge.svg" alt="Build Server"/>
-  </a>
-</p>
+## Features
 
-## Discord
-You can find Slimefun's community on Discord!
-Click the badge down below to join the server for suggestions/questions or other discussions about this plugin.
-<p align="center">
-  <a href="https://discord.gg/fsD4Bkh">
-    <img src="https://img.shields.io/discord/565557184348422174?color=7289DA&label=Discord&style=for-the-badge" alt="Discord Invite"/>
-  </a>
-</p>
+- **Colored Ender Chests:**  
+  Craft Ender Chests using three dye colors (all 16 Minecraft colors supported).  
+  Each unique color combination creates a distinct chest.
 
-## Open Source
-This Project is open-source and licensed under the [MIT License](https://github.com/TheBusyBiscuit/ColoredEnderChests/blob/master/LICENSE)
+- **Per-Player, Per-Color Inventory:**  
+  Every player has their own private inventory for every color combination—safe and secure for all items!
+
+- **Persistent Storage:**  
+  Inventories are automatically saved locally in `enderchests.json` inside the plugin folder.  
+  Your items are never lost, even after server restarts.
+
+- **Colorful Lore:**  
+  The item's lore dynamically shows the chosen colors, each one displayed in its respective chat color and in Portuguese.
+
+- **Slimefun Integration:**  
+  Full support for Slimefun recipes, menus, and custom handlers.
+
+- **Safe Serialization:**  
+  All inventories are serialized using Bukkit's safe mechanisms to prevent item loss or corrupt data.
+
+---
+
+## Example
+
+A colored ender chest with Orange, White, and Lime:
+```
+Tamanho: 27
+
+§eLaranja
+§fBranco
+§aVerde Limão
+```
+
+---
+
+## Installation
+
+1. **Requirements:**
+   - [Slimefun 4](https://github.com/Slimefun/Slimefun4)
+   - Bukkit/Spigot/Paper server (1.16+ recommended)
+
+2. **How to install:**
+   - Download the latest release from the [Releases page](../../releases).
+   - Place the plugin `.jar` in your server’s `plugins` folder.
+   - Restart your server.
+
+3. **Configuration:**
+   - No manual configuration is required. All player data is stored automatically in `plugins/ColoredEnderChests/enderchests.json`.
+
+---
+
+## Usage
+
+- **Crafting:**  
+  Use the Slimefun Ancient Altar with dyes and the required items to craft colored ender chests.
+- **Access:**  
+  Place and right-click your colored ender chest to access your private inventory for that color combination.
+- **Persistence:**  
+  All items are kept safe between restarts.
+
+---
+
+## Building
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Adrianhenrrique/ColoredEnderChests-master.git
+   ```
+2. Build with Maven:
+   ```bash
+   mvn clean package
+   ```
+3. The compiled `.jar` will be in the `target/` folder.
+
+---
+
+## Contributing
+
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+---
+
+## License
+
+MIT License
+
+---
+
+**Made for the Minecraft Slimefun Community!**
